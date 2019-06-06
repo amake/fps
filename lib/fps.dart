@@ -57,7 +57,7 @@ Stream<num> eachFrame({Future<num> animationFrame(): nextFrame}) {
 ///   .transform(const ComputeFps())
 ///   .listen(print);
 /// ```
-class ComputeFps implements StreamTransformer<num, num> {
+class ComputeFps extends StreamTransformerBase<num, num> {
   final num _filterStrength;
 
   /// Create a transformer.
